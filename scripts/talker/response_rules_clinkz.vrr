@@ -1,0 +1,2571 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vrfunknown:version{c1f07085-5299-4e8a-b7e9-1cbb66bbbe23} -->
+{
+	m_Includes = 
+	[
+		"scripts/talker/response_rules_shared.vrr",
+	]
+	m_SoundEventScripts = 
+	[
+		"soundevents/voscripts/game_sounds_vo_clinkz.vsndevts",
+	]
+	m_ResponseGroups = 
+	[
+		
+		{
+			m_name = "clinkz_Spawn"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_spawn_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_spawn_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_spawn_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_spawn_04.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_Spawn"
+				m_Requirements = 
+				[
+					"Spawn",
+					"Isclinkz",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_CustomIsGameStart"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_battlebegins_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_battlebegins_02.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_CustomIsGameStart"
+				m_Requirements = 
+				[
+					"Custom",
+					"Isclinkz",
+					"IsGameStart",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_CustomIsClinkzLoadoutSpawn"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_spawn_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_spawn_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_spawn_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_spawn_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_move_11.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_battlebegins_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_attack_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_cast_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_cast_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_level_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_level_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_attack_14.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_CustomIsClinkzLoadoutSpawn"
+				m_Requirements = 
+				[
+					"Custom",
+					"Isclinkz",
+					"IsClinkzLoadoutSpawn",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_KillIsFirstBlood"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_first_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_KillIsFirstBlood"
+				m_Requirements = 
+				[
+					"Kill",
+					"Isclinkz",
+					"IsFirstBlood",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_Kill"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_kill_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_kill_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_kill_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_kill_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_kill_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_kill_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_kill_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_kill_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_kill_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_kill_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_kill_11.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_kill_12.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_kill_13.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_laugh_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_laugh_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_laugh_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_laugh_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_laugh_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_laugh_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_laugh_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_laugh_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_laugh_11.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_laugh_12.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_Kill"
+				m_Requirements = 
+				[
+					"Kill",
+					"Isclinkz",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_KillIsEnemyBatriderChance_10%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_rival_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_KillIsEnemyBatriderChance_10%"
+				m_Requirements = 
+				[
+					"Kill",
+					"Isclinkz",
+					"IsEnemyBatrider",
+					"Chance_10%",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_KillIsEnemyCrystalMaidenChance_20%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_rival_02.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_KillIsEnemyCrystalMaidenChance_20%"
+				m_Requirements = 
+				[
+					"Kill",
+					"Isclinkz",
+					"IsEnemyCrystalMaiden",
+					"Chance_20%",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_KillIsEnemyAncient_ApparitionChance_20%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_rival_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_rival_04.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_KillIsEnemyAncient_ApparitionChance_20%"
+				m_Requirements = 
+				[
+					"Kill",
+					"Isclinkz",
+					"IsEnemyAncient_Apparition",
+					"Chance_20%",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_KillIsEnemyLichChance_20%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_rival_05.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_KillIsEnemyLichChance_20%"
+				m_Requirements = 
+				[
+					"Kill",
+					"Isclinkz",
+					"IsEnemyLich",
+					"Chance_20%",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_KillIsEnemyWindrunnerChance_20%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_rival_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_rival_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_rival_08.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_KillIsEnemyWindrunnerChance_20%"
+				m_Requirements = 
+				[
+					"Kill",
+					"Isclinkz",
+					"IsEnemyWindrunner",
+					"Chance_20%",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_KillIsEnemyPudgeChance_20%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_rival_09.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_KillIsEnemyPudgeChance_20%"
+				m_Requirements = 
+				[
+					"Kill",
+					"Isclinkz",
+					"IsEnemyPudge",
+					"Chance_20%",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_KillIsEnemyDoom_BringerChance_20%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_rival_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_rival_12.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_KillIsEnemyDoom_BringerChance_20%"
+				m_Requirements = 
+				[
+					"Kill",
+					"Isclinkz",
+					"IsEnemyDoom_Bringer",
+					"Chance_20%",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_KillIsEnemyLinaChance_10%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_rival_11.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_KillIsEnemyLinaChance_10%"
+				m_Requirements = 
+				[
+					"Kill",
+					"Isclinkz",
+					"IsEnemyLina",
+					"Chance_10%",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_Move"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_move_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_move_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_move_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_move_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_move_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_move_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_move_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_move_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_move_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_move_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_move_11.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_move_12.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_move_13.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_move_14.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_move_15.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_Move"
+				m_Requirements = 
+				[
+					"Move",
+					"Isclinkz",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_Attack"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_attack_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_attack_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_attack_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_attack_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_attack_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_attack_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_attack_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_attack_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_attack_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_attack_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_attack_11.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_attack_12.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_attack_13.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_attack_14.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_attack_15.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_attack_16.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_Attack"
+				m_Requirements = 
+				[
+					"Attack",
+					"Isclinkz",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_CastOrder"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_cast_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_cast_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_cast_03.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_CastOrder"
+				m_Requirements = 
+				[
+					"CastOrder",
+					"Isclinkz",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_CastExecuteIsBurningArmyChance_50%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_ability_sear_01.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_ability_pact_01.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_ability_pact_03.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_ability_pact_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_ability_pact_06.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_rival_14.vcd"
+					m_params = 
+					{
+						m_respeakdelay.start = 240.000000
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_CastExecuteIsBurningArmyChance_50%"
+				m_Requirements = 
+				[
+					"CastExecute",
+					"Isclinkz",
+					"IsBurningArmy",
+					"Chance_50%",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_LevelUp"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_level_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_level_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_level_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_level_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_level_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_level_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_level_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_level_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_level_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_laugh_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_LevelUp"
+				m_Requirements = 
+				[
+					"LevelUp",
+					"Isclinkz",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_AllyNearIsAllyJakiroEarlyGame"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_rival_16.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_AllyNearIsAllyJakiroEarlyGame"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isclinkz",
+					"IsAllyJakiro",
+					"EarlyGame",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_AllyNearIsAllyLichEarlyGame"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_rival_17.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_AllyNearIsAllyLichEarlyGame"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isclinkz",
+					"IsAllyLich",
+					"EarlyGame",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_AllyNearIsAllyPugnaEarlyGame"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_rival_19.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_AllyNearIsAllyPugnaEarlyGame"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isclinkz",
+					"IsAllyPugna",
+					"EarlyGame",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_AllyNearIsAllyDrowRangerEarlyGame"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_rival_20.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_AllyNearIsAllyDrowRangerEarlyGame"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isclinkz",
+					"IsAllyDrowRanger",
+					"EarlyGame",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_AllyNearIsAllyLinaEarlyGame"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_rival_21.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_AllyNearIsAllyLinaEarlyGame"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isclinkz",
+					"IsAllyLina",
+					"EarlyGame",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_LastHit"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_lasthit_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_lasthit_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_lasthit_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_lasthit_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_lasthit_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_lasthit_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_lasthit_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_immort_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_doubdam_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_illus_02.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_LastHit"
+				m_Requirements = 
+				[
+					"LastHit",
+					"Isclinkz",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_Death"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_death_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_death_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_death_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_death_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_death_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_death_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_death_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_death_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_death_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_death_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_death_11.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_death_12.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_Death"
+				m_Requirements = 
+				[
+					"Death",
+					"Isclinkz",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_DeathIsReincarnating"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_fastres_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_fastres_02.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_DeathIsReincarnating"
+				m_Requirements = 
+				[
+					"Death",
+					"Isclinkz",
+					"IsReincarnating",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_Respawn"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_respawn_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_respawn_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_respawn_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_respawn_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_respawn_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_respawn_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_respawn_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_respawn_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_respawn_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_respawn_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_respawn_11.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_Respawn"
+				m_Requirements = 
+				[
+					"Respawn",
+					"Isclinkz",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_PurchaseIsExpensiveItem"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_purch_01.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_purch_02.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_purch_03.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_PurchaseIsExpensiveItem"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Isclinkz",
+					"IsExpensiveItem",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_PurchaseIsBlinkDagger"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_blink_01.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_blink_02.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_PurchaseIsBlinkDagger"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Isclinkz",
+					"IsBlinkDagger",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_PurchaseIsUltimateScepter"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_scepter_01.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_scepter_02.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_PurchaseIsUltimateScepter"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Isclinkz",
+					"IsUltimateScepter",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_PurchaseIsMonkeyKingBar"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_item_01.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_PurchaseIsMonkeyKingBar"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Isclinkz",
+					"IsMonkeyKingBar",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_PurchaseIsSkadi"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_item_02.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_PurchaseIsSkadi"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Isclinkz",
+					"IsSkadi",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_PurchaseIsOrchid"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_item_03.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_PurchaseIsOrchid"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Isclinkz",
+					"IsOrchid",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_PurchaseIsSheepStick"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_item_04.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_PurchaseIsSheepStick"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Isclinkz",
+					"IsSheepStick",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_PurchaseIsDivineRapier"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_item_05.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_item_08.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_PurchaseIsDivineRapier"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Isclinkz",
+					"IsDivineRapier",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_PurchaseIsButterfly"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_item_06.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_PurchaseIsButterfly"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Isclinkz",
+					"IsButterfly",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_PurchaseIsDaedalus"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_item_07.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_PurchaseIsDaedalus"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Isclinkz",
+					"IsDaedalus",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_Bottling"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_bottle_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_bottle_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_bottle_03.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_Bottling"
+				m_Requirements = 
+				[
+					"Bottling",
+					"Isclinkz",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_Deny"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_deny_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_deny_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_deny_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_deny_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_deny_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_deny_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_deny_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_deny_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_deny_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_deny_11.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_deny_12.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_deny_13.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_Deny"
+				m_Requirements = 
+				[
+					"Deny",
+					"Isclinkz",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_Defeat"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_lose_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_lose_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_lose_03.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_Defeat"
+				m_Requirements = 
+				[
+					"Defeat",
+					"Isclinkz",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_Victory"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_win_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_win_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_win_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_laugh_03.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_Victory"
+				m_Requirements = 
+				[
+					"Victory",
+					"Isclinkz",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_Immortality"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_immort_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_Immortality"
+				m_Requirements = 
+				[
+					"Immortality",
+					"Isclinkz",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_ImmortalityChance_25%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_immort_02.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_ImmortalityChance_25%"
+				m_Requirements = 
+				[
+					"Immortality",
+					"Isclinkz",
+					"Chance_25%",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_PowerupIsPowerupHaste"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_haste_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_PowerupIsPowerupHaste"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Isclinkz",
+					"IsPowerupHaste",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_PowerupIsPowerupHasteChance_25%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_haste_02.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_PowerupIsPowerupHasteChance_25%"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Isclinkz",
+					"IsPowerupHaste",
+					"Chance_25%",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_PowerupIsPowerupDoubleDamage"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_doubdam_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_PowerupIsPowerupDoubleDamage"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Isclinkz",
+					"IsPowerupDoubleDamage",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_PowerupIsPowerupRegeneration"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_regen_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_PowerupIsPowerupRegeneration"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Isclinkz",
+					"IsPowerupRegeneration",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_PowerupIsPowerupRegenerationChance_25%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_regen_02.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_PowerupIsPowerupRegenerationChance_25%"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Isclinkz",
+					"IsPowerupRegeneration",
+					"Chance_25%",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_PowerupIsPowerupIllusion"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_illus_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_PowerupIsPowerupIllusion"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Isclinkz",
+					"IsPowerupIllusion",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_PowerupIsPowerupIllusionChance_25%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_illus_03.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_PowerupIsPowerupIllusionChance_25%"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Isclinkz",
+					"IsPowerupIllusion",
+					"Chance_25%",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_PowerupIsPowerupBounty"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_lasthit_03.vcd"
+					m_params = 
+					{
+						m_respeakdelay.start = 300.000000
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_PowerupIsPowerupBounty"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Isclinkz",
+					"IsPowerupBounty",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_PowerupIsPowerupArcane"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_ability_sear_02.vcd"
+					m_params = 
+					{
+						m_respeakdelay.start = 300.000000
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_PowerupIsPowerupArcane"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Isclinkz",
+					"IsPowerupArcane",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_PowerupIsPowerupInvisibility"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_invis_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_PowerupIsPowerupInvisibility"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Isclinkz",
+					"IsPowerupInvisibility",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_PowerupIsPowerupInvisibilityChance_5%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_invis_02.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_PowerupIsPowerupInvisibilityChance_5%"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Isclinkz",
+					"IsPowerupInvisibility",
+					"Chance_5%",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_CooldownLittleNag"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_notyet_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_notyet_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_notyet_03.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_CooldownLittleNag"
+				m_Requirements = 
+				[
+					"Cooldown",
+					"Isclinkz",
+					"LittleNag",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_CooldownMediumNag"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_notyet_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_notyet_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_notyet_06.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_CooldownMediumNag"
+				m_Requirements = 
+				[
+					"Cooldown",
+					"Isclinkz",
+					"MediumNag",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_CooldownSuperNag"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_notyet_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_notyet_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_notyet_09.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_CooldownSuperNag"
+				m_Requirements = 
+				[
+					"Cooldown",
+					"Isclinkz",
+					"SuperNag",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_NoManaLittleNag"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_nomana_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_nomana_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_nomana_03.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_NoManaLittleNag"
+				m_Requirements = 
+				[
+					"NoMana",
+					"Isclinkz",
+					"LittleNag",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_NoManaMediumNag"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_nomana_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_nomana_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_nomana_06.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_NoManaMediumNag"
+				m_Requirements = 
+				[
+					"NoMana",
+					"Isclinkz",
+					"MediumNag",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_NoManaSuperNag"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_nomana_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_nomana_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_nomana_09.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_NoManaSuperNag"
+				m_Requirements = 
+				[
+					"NoMana",
+					"Isclinkz",
+					"SuperNag",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_Thanks"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_thanks_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_thanks_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_thanks_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_thanks_04.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_Thanks"
+				m_Requirements = 
+				[
+					"Thanks",
+					"Isclinkz",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_PainChance_25%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_underattack_01.vcd"
+					m_params = 
+					{
+						m_respeakdelay.start = 120.000000
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_PainChance_25%"
+				m_Requirements = 
+				[
+					"Pain",
+					"Isclinkz",
+					"Chance_25%",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_Pain"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_pain_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_pain_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_pain_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_pain_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_pain_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_pain_12.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_pain_13.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_pain_14.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_Pain"
+				m_Requirements = 
+				[
+					"Pain",
+					"Isclinkz",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_InTheBag"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_inthebag_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_InTheBag"
+				m_Requirements = 
+				[
+					"InTheBag",
+					"Isclinkz",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_ItemDropIsCommonDrop"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_happy_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_ItemDropIsCommonDrop"
+				m_Requirements = 
+				[
+					"ItemDrop",
+					"Isclinkz",
+					"IsCommonDrop",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_ItemDropIsRareDrop"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_happy_04.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_ItemDropIsRareDrop"
+				m_Requirements = 
+				[
+					"ItemDrop",
+					"Isclinkz",
+					"IsRareDrop",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_ItemDropIsUltraRareDrop"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_happy_06.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_ItemDropIsUltraRareDrop"
+				m_Requirements = 
+				[
+					"ItemDrop",
+					"Isclinkz",
+					"IsUltraRareDrop",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_EmoteIsEmoteLaugh"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_laugh_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_laugh_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_laugh_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_laugh_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_laugh_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_laugh_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_laugh_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_laugh_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_laugh_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_laugh_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_laugh_11.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_laugh_12.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_EmoteIsEmoteLaugh"
+				m_Requirements = 
+				[
+					"Emote",
+					"Isclinkz",
+					"IsEmoteLaugh",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_Select"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_spawn_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_respawn_08.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_Select"
+				m_Requirements = 
+				[
+					"Select",
+					"Isclinkz",
+				]
+			}
+		},
+		
+		{
+			m_name = "clinkz_TauntIsClinkzTauntHeadRoll"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/clinkz/clinkz_clinkz_deny_02.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "clinkz_TauntIsClinkzTauntHeadRoll"
+				m_Requirements = 
+				[
+					"Taunt",
+					"Isclinkz",
+					"IsClinkzTauntHeadRoll",
+				]
+			}
+		},
+	]
+	m_Requirements = 
+	[
+		
+		{
+			m_name = "Isclinkz"
+			m_matchKey = "classname"
+			m_matchExpr = "npc_dota_hero_clinkz"
+			m_flWeight = 5.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsBurningArmy"
+			m_matchKey = "abilityname"
+			m_matchExpr = "clinkz_burning_army"
+			m_flWeight = 5.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsClinkzLoadoutSpawn"
+			m_matchKey = "special_spawn"
+			m_matchExpr = "clinkz_loadout_spawn"
+			m_flWeight = 5.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsClinkzTauntHeadRoll"
+			m_matchKey = "taunt_type"
+			m_matchExpr = "head_roll"
+			m_flWeight = 5.000000
+			m_bRequired = true
+		},
+	]
+}

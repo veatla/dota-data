@@ -1,0 +1,2590 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vrfunknown:version{c1f07085-5299-4e8a-b7e9-1cbb66bbbe23} -->
+{
+	m_Includes = 
+	[
+		"scripts/talker/response_rules_shared.vrr",
+	]
+	m_SoundEventScripts = 
+	[
+		"soundevents/voscripts/game_sounds_vo_silencer.vsndevts",
+	]
+	m_ResponseGroups = 
+	[
+		
+		{
+			m_name = "silencer_Spawn"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_spawn_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_spawn_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_spawn_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_spawn_04.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_Spawn"
+				m_Requirements = 
+				[
+					"Spawn",
+					"Issilencer",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_CustomIsGameStart"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_battlebegins_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_CustomIsGameStart"
+				m_Requirements = 
+				[
+					"Custom",
+					"Issilencer",
+					"IsGameStart",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_CustomIsSilencerLoadoutSpawn"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_spawn_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_spawn_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_spawn_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_spawn_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_battlebegins_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_ability_glaive_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_ability_silence_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_level_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_kill_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_kill_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_attack_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_respawn_04.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_CustomIsSilencerLoadoutSpawn"
+				m_Requirements = 
+				[
+					"Custom",
+					"Issilencer",
+					"IsSilencerLoadoutSpawn",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_KillIsFirstBlood"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_first_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_KillIsFirstBlood"
+				m_Requirements = 
+				[
+					"Kill",
+					"Issilencer",
+					"IsFirstBlood",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_Kill"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_ability_glaive_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_ability_silence_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_ability_silence_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_kill_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_kill_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_kill_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_kill_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_kill_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_kill_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_kill_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_kill_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_kill_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_kill_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_kill_11.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_kill_14.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_kill_15.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_kill_16.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_kill_17.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_kill_18.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_laugh_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_laugh_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_laugh_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_laugh_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_laugh_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_laugh_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_laugh_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_laugh_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_laugh_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_laugh_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_laugh_11.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_laugh_12.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_laugh_13.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_laugh_14.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_Kill"
+				m_Requirements = 
+				[
+					"Kill",
+					"Issilencer",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_KillIsSilencerGlaivesChance_10%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_ability_intsteal_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_ability_intsteal_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_ability_intsteal_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_kill_12.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_kill_13.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_KillIsSilencerGlaivesChance_10%"
+				m_Requirements = 
+				[
+					"Kill",
+					"Issilencer",
+					"IsSilencerGlaives",
+					"Chance_10%",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_KillIsSilencerCurseChance_10%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_ability_curse_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_ability_curse_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_ability_curse_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_ability_curse_07.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_KillIsSilencerCurseChance_10%"
+				m_Requirements = 
+				[
+					"Kill",
+					"Issilencer",
+					"IsSilencerCurse",
+					"Chance_10%",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_KillIsEnemyQueenofPainChance_25%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_rival_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_KillIsEnemyQueenofPainChance_25%"
+				m_Requirements = 
+				[
+					"Kill",
+					"Issilencer",
+					"IsEnemyQueenofPain",
+					"Chance_25%",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_KillIsEnemyPudgeChance_5%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_rival_02.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_KillIsEnemyPudgeChance_5%"
+				m_Requirements = 
+				[
+					"Kill",
+					"Issilencer",
+					"IsEnemyPudge",
+					"Chance_5%",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_KillIsEnemyUndyingChance_5%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_rival_02.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_KillIsEnemyUndyingChance_5%"
+				m_Requirements = 
+				[
+					"Kill",
+					"Issilencer",
+					"IsEnemyUndying",
+					"Chance_5%",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_KillIsEnemyInvokerIsSilencerGlaivesChance_25%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_rival_03.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_KillIsEnemyInvokerIsSilencerGlaivesChance_25%"
+				m_Requirements = 
+				[
+					"Kill",
+					"Issilencer",
+					"IsEnemyInvoker",
+					"IsSilencerGlaives",
+					"Chance_25%",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_KillIsEnemyZuusChance_25%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_rival_04.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_KillIsEnemyZuusChance_25%"
+				m_Requirements = 
+				[
+					"Kill",
+					"Issilencer",
+					"IsEnemyZuus",
+					"Chance_25%",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_KillIsEnemyTinkerChance_25%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_rival_05.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_KillIsEnemyTinkerChance_25%"
+				m_Requirements = 
+				[
+					"Kill",
+					"Issilencer",
+					"IsEnemyTinker",
+					"Chance_25%",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_KillIsEnemyJakiroChance_25%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_rival_06.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_KillIsEnemyJakiroChance_25%"
+				m_Requirements = 
+				[
+					"Kill",
+					"Issilencer",
+					"IsEnemyJakiro",
+					"Chance_25%",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_KillIsEnemySkywrath_MageChance_25%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_rival_06.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_KillIsEnemySkywrath_MageChance_25%"
+				m_Requirements = 
+				[
+					"Kill",
+					"Issilencer",
+					"IsEnemySkywrath_Mage",
+					"Chance_25%",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_KillIsEnemyPuckChance_25%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_rival_06.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_KillIsEnemyPuckChance_25%"
+				m_Requirements = 
+				[
+					"Kill",
+					"Issilencer",
+					"IsEnemyPuck",
+					"Chance_25%",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_KillIsEnemyStormSpiritChance_25%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_rival_07.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_KillIsEnemyStormSpiritChance_25%"
+				m_Requirements = 
+				[
+					"Kill",
+					"Issilencer",
+					"IsEnemyStormSpirit",
+					"Chance_25%",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_Move"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_move_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_move_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_move_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_move_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_move_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_move_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_move_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_move_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_move_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_move_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_move_11.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_move_12.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_move_13.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_move_14.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_Move"
+				m_Requirements = 
+				[
+					"Move",
+					"Issilencer",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_Attack"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_attack_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_attack_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_attack_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_attack_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_attack_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_attack_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_attack_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_attack_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_attack_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_attack_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_attack_11.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_attack_12.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_attack_13.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_attack_14.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_attack_15.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_Attack"
+				m_Requirements = 
+				[
+					"Attack",
+					"Issilencer",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_CastOrder"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_cast_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_cast_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_cast_03.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_CastOrder"
+				m_Requirements = 
+				[
+					"CastOrder",
+					"Issilencer",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_LevelUp"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_level_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_level_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_level_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_level_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_level_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_level_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_level_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_level_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_level_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_level_10.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_LevelUp"
+				m_Requirements = 
+				[
+					"LevelUp",
+					"Issilencer",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_AllyNearIsAllyDeath_ProphetEarlyGame"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_rival_08.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_AllyNearIsAllyDeath_ProphetEarlyGame"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Issilencer",
+					"IsAllyDeath_Prophet",
+					"EarlyGame",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_AllyNearIsAllyDrowRangerEarlyGame"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_rival_09.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_AllyNearIsAllyDrowRangerEarlyGame"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Issilencer",
+					"IsAllyDrowRanger",
+					"EarlyGame",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_AllyNearIsAllyPuckEarlyGame"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_rival_10.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_AllyNearIsAllyPuckEarlyGame"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Issilencer",
+					"IsAllyPuck",
+					"EarlyGame",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_AllyNearIsAllyAntimageEarlyGame"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_rival_11.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_AllyNearIsAllyAntimageEarlyGame"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Issilencer",
+					"IsAllyAntimage",
+					"EarlyGame",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_Death"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_death_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_death_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_death_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_death_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_death_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_death_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_death_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_death_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_death_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_death_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_death_11.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_Death"
+				m_Requirements = 
+				[
+					"Death",
+					"Issilencer",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_DeathIsReincarnating"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_fastres_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_fastres_02.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_DeathIsReincarnating"
+				m_Requirements = 
+				[
+					"Death",
+					"Issilencer",
+					"IsReincarnating",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_Respawn"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_respawn_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_respawn_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_respawn_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_respawn_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_respawn_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_respawn_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_respawn_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_respawn_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_respawn_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_respawn_10.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_Respawn"
+				m_Requirements = 
+				[
+					"Respawn",
+					"Issilencer",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_LastHit"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_lasthit_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_lasthit_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_lasthit_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_lasthit_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_lasthit_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_lasthit_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_lasthit_07.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_LastHit"
+				m_Requirements = 
+				[
+					"LastHit",
+					"Issilencer",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_Deny"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_deny_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_deny_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_deny_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_deny_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_deny_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_deny_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_deny_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_deny_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_deny_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_deny_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_deny_11.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_Deny"
+				m_Requirements = 
+				[
+					"Deny",
+					"Issilencer",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_Select"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_ability_glaive_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_Select"
+				m_Requirements = 
+				[
+					"Select",
+					"Issilencer",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_PurchaseIsExpensiveItem"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_purch_01.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_purch_02.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_purch_03.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_PurchaseIsExpensiveItem"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Issilencer",
+					"IsExpensiveItem",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_PurchaseIsBlinkDagger"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_blink_01.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_blink_02.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_blink_03.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_PurchaseIsBlinkDagger"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Issilencer",
+					"IsBlinkDagger",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_PurchaseIsUltimateScepter"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_scepter_01.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_scepter_02.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_PurchaseIsUltimateScepter"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Issilencer",
+					"IsUltimateScepter",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_PurchaseIsShiva"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_item_01.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_PurchaseIsShiva"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Issilencer",
+					"IsShiva",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_PurchaseIsSheepStick"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_item_02.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_PurchaseIsSheepStick"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Issilencer",
+					"IsSheepStick",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_PurchaseIsOrchid"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_item_03.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_PurchaseIsOrchid"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Issilencer",
+					"IsOrchid",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_PurchaseIsEulScepter"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_item_04.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_PurchaseIsEulScepter"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Issilencer",
+					"IsEulScepter",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_PurchaseIsHeart"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_item_05.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_PurchaseIsHeart"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Issilencer",
+					"IsHeart",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_PurchaseIsNecronomicon"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_item_06.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_PurchaseIsNecronomicon"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Issilencer",
+					"IsNecronomicon",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_PurchaseIsAssaultCuirass"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_item_07.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_PurchaseIsAssaultCuirass"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Issilencer",
+					"IsAssaultCuirass",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_PurchaseIsMekansm"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_item_08.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_PurchaseIsMekansm"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Issilencer",
+					"IsMekansm",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_Bottling"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_bottle_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_bottle_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_bottle_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_bottle_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_bottle_05.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_Bottling"
+				m_Requirements = 
+				[
+					"Bottling",
+					"Issilencer",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_Immortality"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_immort_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_Immortality"
+				m_Requirements = 
+				[
+					"Immortality",
+					"Issilencer",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_PowerupIsPowerupHaste"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_haste_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_PowerupIsPowerupHaste"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Issilencer",
+					"IsPowerupHaste",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_PowerupIsPowerupHasteChance_25%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_haste_02.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_PowerupIsPowerupHasteChance_25%"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Issilencer",
+					"IsPowerupHaste",
+					"Chance_25%",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_PowerupIsPowerupDoubleDamage"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_doubdam_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_PowerupIsPowerupDoubleDamage"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Issilencer",
+					"IsPowerupDoubleDamage",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_PowerupIsPowerupDoubleDamageChance_25%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_doubdam_02.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_PowerupIsPowerupDoubleDamageChance_25%"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Issilencer",
+					"IsPowerupDoubleDamage",
+					"Chance_25%",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_PowerupIsPowerupRegeneration"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_regen_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_PowerupIsPowerupRegeneration"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Issilencer",
+					"IsPowerupRegeneration",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_PowerupIsPowerupBounty"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_lasthit_07.vcd"
+					m_params = 
+					{
+						m_respeakdelay.start = 300.000000
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_PowerupIsPowerupBounty"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Issilencer",
+					"IsPowerupBounty",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_PowerupIsPowerupIllusion"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_illus_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_PowerupIsPowerupIllusion"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Issilencer",
+					"IsPowerupIllusion",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_PowerupIsPowerupInvisibility"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_invis_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_PowerupIsPowerupInvisibility"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Issilencer",
+					"IsPowerupInvisibility",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_PowerupIsPowerupArcane"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_ability_silence_03.vcd"
+					m_params = 
+					{
+						m_respeakdelay.start = 300.000000
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_PowerupIsPowerupArcane"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Issilencer",
+					"IsPowerupArcane",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_Thanks"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_thanks_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_thanks_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_thanks_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_thanks_04.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_Thanks"
+				m_Requirements = 
+				[
+					"Thanks",
+					"Issilencer",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_PainChance_25%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_underattack_01.vcd"
+					m_params = 
+					{
+						m_respeakdelay.start = 120.000000
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_PainChance_25%"
+				m_Requirements = 
+				[
+					"Pain",
+					"Issilencer",
+					"Chance_25%",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_Pain"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_pain_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_pain_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_pain_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_pain_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_pain_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_pain_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_pain_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_pain_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_pain_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_pain_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_pain_11.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_pain_12.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_pain_13.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_pain_14.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_pain_15.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_pain_16.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_pain_17.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_pain_18.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_Pain"
+				m_Requirements = 
+				[
+					"Pain",
+					"Issilencer",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_InTheBag"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_inthebag_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_InTheBag"
+				m_Requirements = 
+				[
+					"InTheBag",
+					"Issilencer",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_CooldownLittleNag"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_notyet_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_notyet_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_notyet_03.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_CooldownLittleNag"
+				m_Requirements = 
+				[
+					"Cooldown",
+					"Issilencer",
+					"LittleNag",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_CooldownMediumNag"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_notyet_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_notyet_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_notyet_06.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_CooldownMediumNag"
+				m_Requirements = 
+				[
+					"Cooldown",
+					"Issilencer",
+					"MediumNag",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_CooldownSuperNag"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_notyet_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_notyet_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_notyet_09.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_CooldownSuperNag"
+				m_Requirements = 
+				[
+					"Cooldown",
+					"Issilencer",
+					"SuperNag",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_NoManaLittleNag"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_nomana_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_nomana_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_nomana_03.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_NoManaLittleNag"
+				m_Requirements = 
+				[
+					"NoMana",
+					"Issilencer",
+					"LittleNag",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_NoManaMediumNag"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_nomana_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_nomana_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_nomana_06.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_NoManaMediumNag"
+				m_Requirements = 
+				[
+					"NoMana",
+					"Issilencer",
+					"MediumNag",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_NoManaSuperNag"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_nomana_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_nomana_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_nomana_09.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_NoManaSuperNag"
+				m_Requirements = 
+				[
+					"NoMana",
+					"Issilencer",
+					"SuperNag",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_Defeat"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_lose_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_lose_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_lose_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_lose_04.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_Defeat"
+				m_Requirements = 
+				[
+					"Defeat",
+					"Issilencer",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_Victory"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_win_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_win_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_win_03.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_Victory"
+				m_Requirements = 
+				[
+					"Victory",
+					"Issilencer",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_ItemDropIsCommonDrop"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_happy_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_ItemDropIsCommonDrop"
+				m_Requirements = 
+				[
+					"ItemDrop",
+					"Issilencer",
+					"IsCommonDrop",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_ItemDropIsRareDrop"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_happy_02.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_ItemDropIsRareDrop"
+				m_Requirements = 
+				[
+					"ItemDrop",
+					"Issilencer",
+					"IsRareDrop",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_ItemDropIsUltraRareDrop"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_happy_09.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_ItemDropIsUltraRareDrop"
+				m_Requirements = 
+				[
+					"ItemDrop",
+					"Issilencer",
+					"IsUltraRareDrop",
+				]
+			}
+		},
+		
+		{
+			m_name = "silencer_EmoteIsEmoteLaugh"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_laugh_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_laugh_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_laugh_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_laugh_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_laugh_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_laugh_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_laugh_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_laugh_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_laugh_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_laugh_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_laugh_11.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_laugh_12.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_laugh_13.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/silencer/silencer_silen_laugh_14.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "silencer_EmoteIsEmoteLaugh"
+				m_Requirements = 
+				[
+					"Emote",
+					"Issilencer",
+					"IsEmoteLaugh",
+				]
+			}
+		},
+	]
+	m_Requirements = 
+	[
+		
+		{
+			m_name = "Issilencer"
+			m_matchKey = "classname"
+			m_matchExpr = "npc_dota_hero_silencer"
+			m_flWeight = 5.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsSilencerGlaives"
+			m_matchKey = "abilityname"
+			m_matchExpr = "silencer_glaives_of_wisdom"
+			m_flWeight = 5.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsSilencerCurse"
+			m_matchKey = "abilityname"
+			m_matchExpr = "silencer_curse_of_the_silent"
+			m_flWeight = 5.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsSilencerLoadoutSpawn"
+			m_matchKey = "special_spawn"
+			m_matchExpr = "silencer_loadout_spawn"
+			m_flWeight = 5.000000
+			m_bRequired = true
+		},
+	]
+}

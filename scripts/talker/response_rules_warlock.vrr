@@ -1,0 +1,2197 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vrfunknown:version{c1f07085-5299-4e8a-b7e9-1cbb66bbbe23} -->
+{
+	m_Includes = 
+	[
+		"scripts/talker/response_rules_shared.vrr",
+	]
+	m_SoundEventScripts = 
+	[
+		"soundevents/voscripts/game_sounds_vo_warlock.vsndevts",
+	]
+	m_ResponseGroups = 
+	[
+		
+		{
+			m_name = "warlock_Spawn"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_spawn_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_spawn_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_spawn_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_spawn_04.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_Spawn"
+				m_Requirements = 
+				[
+					"Spawn",
+					"Iswarlock",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_Move"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_move_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_move_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_move_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_move_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_move_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_move_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_move_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_move_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_move_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_move_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_move_11.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_move_12.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_move_13.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_move_14.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_Move"
+				m_Requirements = 
+				[
+					"Move",
+					"Iswarlock",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_MoveChance_25%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_incant_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_incant_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_incant_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_incant_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_incant_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_incant_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_incant_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_incant_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_incant_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_incant_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_incant_11.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_incant_12.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_incant_13.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_incant_14.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_incant_15.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_incant_16.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_incant_17.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_incant_18.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_incant_19.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_incant_20.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_incant_21.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_incant_22.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_incant_23.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_incant_24.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_incant_25.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_MoveChance_25%"
+				m_Requirements = 
+				[
+					"Move",
+					"Iswarlock",
+					"Chance_25%",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_Attack"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_attack_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_attack_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_attack_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_attack_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_attack_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_attack_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_attack_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_attack_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_attack_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_attack_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_attack_11.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_Attack"
+				m_Requirements = 
+				[
+					"Attack",
+					"Iswarlock",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_CustomIsGameStart"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_cast_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_CustomIsGameStart"
+				m_Requirements = 
+				[
+					"Custom",
+					"Iswarlock",
+					"IsGameStart",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_CustomIsWarlockLoadoutSpawn"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_spawn_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_spawn_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_spawn_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_spawn_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_move_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_move_12.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_attack_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_attack_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_attack_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_attack_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_attack_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_attack_08.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_CustomIsWarlockLoadoutSpawn"
+				m_Requirements = 
+				[
+					"Custom",
+					"Iswarlock",
+					"IsWarlockLoadoutSpawn",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_CastOrder"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_cast_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_cast_03.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_CastOrder"
+				m_Requirements = 
+				[
+					"CastOrder",
+					"Iswarlock",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_CastExecuteIsAbilityUpheaval"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_ability_upheav_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_ability_upheav_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_ability_upheav_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_ability_upheav_04.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_CastExecuteIsAbilityUpheaval"
+				m_Requirements = 
+				[
+					"CastExecute",
+					"Iswarlock",
+					"IsAbilityUpheaval",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_CastExecuteIsAbilityRainOfChaosChance_5%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_ability_reign_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_CastExecuteIsAbilityRainOfChaosChance_5%"
+				m_Requirements = 
+				[
+					"CastExecute",
+					"Iswarlock",
+					"IsAbilityRainOfChaos",
+					"Chance_5%",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_CastExecuteIsAbilityRainOfChaos"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_ability_reign_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_ability_reign_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_ability_reign_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_ability_reign_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_ability_reign_06.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_CastExecuteIsAbilityRainOfChaos"
+				m_Requirements = 
+				[
+					"CastExecute",
+					"Iswarlock",
+					"IsAbilityRainOfChaos",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_CastExecuteIsAbilityRainOfChaosHasScepterChance_30%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_doubdemon_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_doubdemon_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_doubdemon_07.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_CastExecuteIsAbilityRainOfChaosHasScepterChance_30%"
+				m_Requirements = 
+				[
+					"CastExecute",
+					"Iswarlock",
+					"IsAbilityRainOfChaos",
+					"HasScepter",
+					"Chance_30%",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_CastExecuteIsUseEnchantedMangoIsEnemyWarlockChance_10%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_happy_02.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_CastExecuteIsUseEnchantedMangoIsEnemyWarlockChance_10%"
+				m_Requirements = 
+				[
+					"CastExecute",
+					"Iswarlock",
+					"IsUseEnchantedMango",
+					"IsEnemyWarlock",
+					"Chance_10%",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_LevelUp"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_level_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_level_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_level_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_level_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_level_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_level_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_laugh_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_laugh_02.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_LevelUp"
+				m_Requirements = 
+				[
+					"LevelUp",
+					"Iswarlock",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_Kill"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_level_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_level_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_level_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_kill_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_kill_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_kill_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_kill_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_kill_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_kill_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_kill_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_kill_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_kill_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_kill_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_kill_11.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_kill_12.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_kill_13.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_kill_14.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_laugh_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_laugh_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_laugh_06.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_Kill"
+				m_Requirements = 
+				[
+					"Kill",
+					"Iswarlock",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_KillIsFirstBlood"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_firstblood_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_KillIsFirstBlood"
+				m_Requirements = 
+				[
+					"Kill",
+					"Iswarlock",
+					"IsFirstBlood",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_LastHit"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_lasthit_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_lasthit_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_lasthit_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_lasthit_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_lasthit_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_lasthit_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_lasthit_07.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_LastHit"
+				m_Requirements = 
+				[
+					"LastHit",
+					"Iswarlock",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_Death"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_death_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_death_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_death_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_death_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_death_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_death_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_death_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_death_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_death_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_death_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_death_12.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_Death"
+				m_Requirements = 
+				[
+					"Death",
+					"Iswarlock",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_DeathChance_3%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_death_11.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_DeathChance_3%"
+				m_Requirements = 
+				[
+					"Death",
+					"Iswarlock",
+					"Chance_3%",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_DeathIsReincarnating"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_laugh_03.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_DeathIsReincarnating"
+				m_Requirements = 
+				[
+					"Death",
+					"Iswarlock",
+					"IsReincarnating",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_Respawn"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_respawn_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_respawn_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_respawn_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_respawn_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_respawn_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_respawn_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_respawn_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_respawn_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_respawn_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_respawn_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_respawn_11.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_Respawn"
+				m_Requirements = 
+				[
+					"Respawn",
+					"Iswarlock",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_Select"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_rare_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_rare_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_rare_03.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_Select"
+				m_Requirements = 
+				[
+					"Select",
+					"Iswarlock",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_PurchaseIsExpensiveItem"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_purch_01.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_purch_02.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_purch_03.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_PurchaseIsExpensiveItem"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Iswarlock",
+					"IsExpensiveItem",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_PurchaseIsRefresher"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_refresh_01.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_PurchaseIsRefresher"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Iswarlock",
+					"IsRefresher",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_PurchaseIsDivineRapier"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_rapier_02.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_rapier_03.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_rapier_04.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_PurchaseIsDivineRapier"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Iswarlock",
+					"IsDivineRapier",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_PurchaseIsUltimateScepter"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_scepter_01.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_scepter_02.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_PurchaseIsUltimateScepter"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Iswarlock",
+					"IsUltimateScepter",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_Bottling"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_bottle_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_bottle_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_bottle_03.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_Bottling"
+				m_Requirements = 
+				[
+					"Bottling",
+					"Iswarlock",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_Deny"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_deny_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_deny_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_deny_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_deny_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_deny_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_deny_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_deny_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_deny_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_deny_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_deny_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_deny_11.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_deny_12.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_Deny"
+				m_Requirements = 
+				[
+					"Deny",
+					"Iswarlock",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_Defeat"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_lose_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_lose_02.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_Defeat"
+				m_Requirements = 
+				[
+					"Defeat",
+					"Iswarlock",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_DefeatChance_10%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_lose_03.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_DefeatChance_10%"
+				m_Requirements = 
+				[
+					"Defeat",
+					"Iswarlock",
+					"Chance_10%",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_Victory"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_win_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_win_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_win_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_win_04.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_Victory"
+				m_Requirements = 
+				[
+					"Victory",
+					"Iswarlock",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_Immortality"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_immort_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_Immortality"
+				m_Requirements = 
+				[
+					"Immortality",
+					"Iswarlock",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_ImmortalityChance_5%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_immort_02.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_ImmortalityChance_5%"
+				m_Requirements = 
+				[
+					"Immortality",
+					"Iswarlock",
+					"Chance_5%",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_PowerupIsPowerupBounty"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_lasthit_06.vcd"
+					m_params = 
+					{
+						m_respeakdelay.start = 300.000000
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_PowerupIsPowerupBounty"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Iswarlock",
+					"IsPowerupBounty",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_PowerupIsPowerupHaste"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_haste_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_PowerupIsPowerupHaste"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Iswarlock",
+					"IsPowerupHaste",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_PowerupIsPowerupDoubleDamage"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_doubdam_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_PowerupIsPowerupDoubleDamage"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Iswarlock",
+					"IsPowerupDoubleDamage",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_PowerupIsPowerupDoubleDamageChance_5%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_doubdam_02.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_PowerupIsPowerupDoubleDamageChance_5%"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Iswarlock",
+					"IsPowerupDoubleDamage",
+					"Chance_5%",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_PowerupIsPowerupRegeneration"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_regen_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_PowerupIsPowerupRegeneration"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Iswarlock",
+					"IsPowerupRegeneration",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_PowerupIsPowerupIllusion"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_illus_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_PowerupIsPowerupIllusion"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Iswarlock",
+					"IsPowerupIllusion",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_PowerupIsPowerupInvisibility"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_invis_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_PowerupIsPowerupInvisibility"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Iswarlock",
+					"IsPowerupInvisibility",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_PowerupIsPowerupArcane"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_ability_reign_07.vcd"
+					m_params = 
+					{
+						m_respeakdelay.start = 300.000000
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_PowerupIsPowerupArcane"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Iswarlock",
+					"IsPowerupArcane",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_CooldownLittleNag"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_notyet_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_notyet_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_notyet_03.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_CooldownLittleNag"
+				m_Requirements = 
+				[
+					"Cooldown",
+					"Iswarlock",
+					"LittleNag",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_CooldownMediumNag"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_notyet_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_notyet_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_notyet_06.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_CooldownMediumNag"
+				m_Requirements = 
+				[
+					"Cooldown",
+					"Iswarlock",
+					"MediumNag",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_CooldownSuperNag"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_notyet_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_notyet_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_notyet_09.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_CooldownSuperNag"
+				m_Requirements = 
+				[
+					"Cooldown",
+					"Iswarlock",
+					"SuperNag",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_NoManaLittleNag"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_nomana_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_nomana_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_nomana_03.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_NoManaLittleNag"
+				m_Requirements = 
+				[
+					"NoMana",
+					"Iswarlock",
+					"LittleNag",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_NoManaMediumNag"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_nomana_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_nomana_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_nomana_06.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_NoManaMediumNag"
+				m_Requirements = 
+				[
+					"NoMana",
+					"Iswarlock",
+					"MediumNag",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_NoManaSuperNag"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_nomana_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_nomana_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_nomana_09.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_NoManaSuperNag"
+				m_Requirements = 
+				[
+					"NoMana",
+					"Iswarlock",
+					"SuperNag",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_Thanks"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_thanks_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_thanks_02.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_Thanks"
+				m_Requirements = 
+				[
+					"Thanks",
+					"Iswarlock",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_PainChance_25%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_underattack_01.vcd"
+					m_params = 
+					{
+						m_respeakdelay.start = 120.000000
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_PainChance_25%"
+				m_Requirements = 
+				[
+					"Pain",
+					"Iswarlock",
+					"Chance_25%",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_Pain"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_pain_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_pain_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_pain_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_pain_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_pain_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_pain_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_pain_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_pain_08.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_Pain"
+				m_Requirements = 
+				[
+					"Pain",
+					"Iswarlock",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_InTheBag"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_inthebag_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_InTheBag"
+				m_Requirements = 
+				[
+					"InTheBag",
+					"Iswarlock",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_ItemDropIsRareDrop"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_happy_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_ItemDropIsRareDrop"
+				m_Requirements = 
+				[
+					"ItemDrop",
+					"Iswarlock",
+					"IsRareDrop",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_ItemDropIsUltraRareDrop"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_happy_04.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_ItemDropIsUltraRareDrop"
+				m_Requirements = 
+				[
+					"ItemDrop",
+					"Iswarlock",
+					"IsUltraRareDrop",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_ItemDropIsCommonDrop"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_happy_05.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_ItemDropIsCommonDrop"
+				m_Requirements = 
+				[
+					"ItemDrop",
+					"Iswarlock",
+					"IsCommonDrop",
+				]
+			}
+		},
+		
+		{
+			m_name = "warlock_EmoteIsEmoteLaugh"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_laugh_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_laugh_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_laugh_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_laugh_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_laugh_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/warlock/warlock_warl_laugh_06.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "warlock_EmoteIsEmoteLaugh"
+				m_Requirements = 
+				[
+					"Emote",
+					"Iswarlock",
+					"IsEmoteLaugh",
+				]
+			}
+		},
+	]
+	m_Requirements = 
+	[
+		
+		{
+			m_name = "Iswarlock"
+			m_matchKey = "classname"
+			m_matchExpr = "npc_dota_hero_warlock"
+			m_flWeight = 5.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbilityUpheaval"
+			m_matchKey = "abilityname"
+			m_matchExpr = "warlock_upheaval"
+			m_flWeight = 5.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsAbilityRainOfChaos"
+			m_matchKey = "abilityname"
+			m_matchExpr = "warlock_rain_of_chaos"
+			m_flWeight = 5.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsWarlockLoadoutSpawn"
+			m_matchKey = "special_spawn"
+			m_matchExpr = "warlock_loadout_spawn"
+			m_flWeight = 5.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsWarlockGolemDiffused"
+			m_matchKey = "abilityname"
+			m_matchExpr = "item_diffusal_blade"
+			m_flWeight = 5.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsWarlockGolemLvl1"
+			m_matchKey = "creaturename"
+			m_matchExpr = "npc_dota_warlock_golem_1"
+			m_flWeight = 5.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsWarlockGolemLvl2"
+			m_matchKey = "creaturename"
+			m_matchExpr = "npc_dota_warlock_golem_2"
+			m_flWeight = 5.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsWarlockGolemLvl3"
+			m_matchKey = "creaturename"
+			m_matchExpr = "npc_dota_warlock_golem_3"
+			m_flWeight = 5.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsWarlockScepterGolemLvl1"
+			m_matchKey = "creaturename"
+			m_matchExpr = "npc_dota_warlock_golem_scepter_1"
+			m_flWeight = 5.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsWarlockScepterGolemLvl2"
+			m_matchKey = "creaturename"
+			m_matchExpr = "npc_dota_warlock_golem_scepter_2"
+			m_flWeight = 5.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsWarlockScepterGolemLvl3"
+			m_matchKey = "creaturename"
+			m_matchExpr = "npc_dota_warlock_golem_scepter_3"
+			m_flWeight = 5.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsUseEnchantedMango"
+			m_matchKey = "abilityname"
+			m_matchExpr = "item_enchanted_mango"
+			m_flWeight = 5.000000
+			m_bRequired = true
+		},
+	]
+}

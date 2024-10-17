@@ -1,0 +1,6675 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:vrfunknown:version{c1f07085-5299-4e8a-b7e9-1cbb66bbbe23} -->
+{
+	m_Includes = 
+	[
+		"scripts/talker/response_rules_shared.vrr",
+	]
+	m_SoundEventScripts = 
+	[
+		"soundevents/voscripts/game_sounds_vo_oracle.vsndevts",
+	]
+	m_ResponseGroups = 
+	[
+		
+		{
+			m_name = "oracle_Spawn"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_spawn_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_spawn_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_spawn_03.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_Spawn"
+				m_Requirements = 
+				[
+					"Spawn",
+					"Isoracle",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_CustomIsGameStart"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_battlebegins_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_battlebegins_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_battlebegins_03.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_CustomIsGameStart"
+				m_Requirements = 
+				[
+					"Custom",
+					"Isoracle",
+					"IsGameStart",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_CustomIsFalsePromiseIsFPDiedChance_15%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_falsepromise_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_falsepromise_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_falsepromise_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_falsepromise_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_falsepromise_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_falsepromise_12.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_falsepromise_13.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_failure_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_CustomIsFalsePromiseIsFPDiedChance_15%"
+				m_Requirements = 
+				[
+					"Custom",
+					"Isoracle",
+					"IsFalsePromise",
+					"IsFPDied",
+					"Chance_15%",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_CustomIsFalsePromiseIsFPSurvivedChance_25%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_falsepromise_14.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_falsepromise_15.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_falsepromise_17.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_falsepromise_18.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_falsepromise_19.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_CustomIsFalsePromiseIsFPSurvivedChance_25%"
+				m_Requirements = 
+				[
+					"Custom",
+					"Isoracle",
+					"IsFalsePromise",
+					"IsFPSurvived",
+					"Chance_25%",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_CustomIsFalsePromiseIsFPBarelyLivedChance_25%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_falsepromise_16.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_falsepromise_20.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_CustomIsFalsePromiseIsFPBarelyLivedChance_25%"
+				m_Requirements = 
+				[
+					"Custom",
+					"Isoracle",
+					"IsFalsePromise",
+					"IsFPBarelyLived",
+					"Chance_25%",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_CustomIsOracleLoadoutSpawn"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_spawn_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_spawn_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_spawn_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_battlebegins_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_move_18.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_move_23.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_purifyingflames_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_purifyingflames_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_attack_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_levelup_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_fatesedict_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_falsepromise_04.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_CustomIsOracleLoadoutSpawn"
+				m_Requirements = 
+				[
+					"Custom",
+					"Isoracle",
+					"IsOracleLoadoutSpawn",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_KillIsFirstBlood"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_firstblood_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_firstblood_02.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_KillIsFirstBlood"
+				m_Requirements = 
+				[
+					"Kill",
+					"Isoracle",
+					"IsFirstBlood",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_Kill"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_kill_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_kill_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_kill_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_kill_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_kill_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_kill_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_kill_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_kill_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_kill_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_kill_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_kill_11.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_kill_12.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_kill_14.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_kill_15.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_kill_16.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_kill_17.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_kill_18.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_kill_19.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_kill_20.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_kill_21.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_kill_22.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_laugh_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_laugh_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_laugh_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_laugh_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_laugh_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_laugh_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_laugh_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_laugh_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_laugh_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_laugh_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_laugh_11.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_laugh_12.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_laugh_13.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_laugh_14.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_laugh_15.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_laugh_16.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_laugh_17.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_laugh_19.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_Kill"
+				m_Requirements = 
+				[
+					"Kill",
+					"Isoracle",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_KillChance_2%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_kill_13.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_KillChance_2%"
+				m_Requirements = 
+				[
+					"Kill",
+					"Isoracle",
+					"Chance_2%",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_Move"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_move_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_move_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_move_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_move_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_move_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_move_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_move_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_move_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_move_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_move_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_move_11.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_move_12.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_move_13.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_move_14.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_move_15.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_move_16.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_move_17.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_move_18.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_move_19.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_move_20.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_move_21.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_move_22.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_move_23.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_move_24.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_move_25.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_move_26.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_move_27.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_move_28.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_move_29.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_move_30.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_move_31.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_move_32.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_Move"
+				m_Requirements = 
+				[
+					"Move",
+					"Isoracle",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_Attack"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_attack_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_attack_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_attack_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_attack_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_attack_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_attack_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_attack_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_attack_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_attack_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_attack_11.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_attack_12.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_attack_13.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_Attack"
+				m_Requirements = 
+				[
+					"Attack",
+					"Isoracle",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AttackChance_2%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_attack_08.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AttackChance_2%"
+				m_Requirements = 
+				[
+					"Attack",
+					"Isoracle",
+					"Chance_2%",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_CastOrder"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_cast_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_cast_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_cast_03.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_CastOrder"
+				m_Requirements = 
+				[
+					"CastOrder",
+					"Isoracle",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_CastExecuteIsFortunesEndChance_50%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_fortunesend_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_fortunesend_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_fortunesend_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_fortunesend_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_fortunesend_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_fortunesend_06.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_CastExecuteIsFortunesEndChance_50%"
+				m_Requirements = 
+				[
+					"CastExecute",
+					"Isoracle",
+					"IsFortunesEnd",
+					"Chance_50%",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_CastExecuteIsFatesEdictIsCastOnAllyChance_50%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_fatesedict_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_fatesedict_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_fatesedict_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_fatesedict_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_fatesedict_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_fatesedict_06.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_CastExecuteIsFatesEdictIsCastOnAllyChance_50%"
+				m_Requirements = 
+				[
+					"CastExecute",
+					"Isoracle",
+					"IsFatesEdict",
+					"IsCastOnAlly",
+					"Chance_50%",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_CastExecuteIsFatesEdictIsCastOnEnemyChance_50%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_fatesedict_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_fatesedict_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_fatesedict_09.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_CastExecuteIsFatesEdictIsCastOnEnemyChance_50%"
+				m_Requirements = 
+				[
+					"CastExecute",
+					"Isoracle",
+					"IsFatesEdict",
+					"IsCastOnEnemy",
+					"Chance_50%",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_CastExecuteIsFatesEdictIsEnemyOracleChance_50%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_fatesedict_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_fatesedict_11.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_fatesedict_12.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_fatesedict_13.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_fatesedict_14.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_fatesedict_15.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_fatesedict_16.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_fatesedict_17.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_CastExecuteIsFatesEdictIsEnemyOracleChance_50%"
+				m_Requirements = 
+				[
+					"CastExecute",
+					"Isoracle",
+					"IsFatesEdict",
+					"IsEnemyOracle",
+					"Chance_50%",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_CastExecuteIsPurifyingFlamesIsCastOnAllyChance_30%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_purifyingflames_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_purifyingflames_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_purifyingflames_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_purifyingflames_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_purifyingflames_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_purifyingflames_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_purifyingflames_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_purifyingflames_11.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_CastExecuteIsPurifyingFlamesIsCastOnAllyChance_30%"
+				m_Requirements = 
+				[
+					"CastExecute",
+					"Isoracle",
+					"IsPurifyingFlames",
+					"IsCastOnAlly",
+					"Chance_30%",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_CastExecuteIsPurifyingFlamesIsCastOnEnemyChance_25%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_purifyingflames_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_purifyingflames_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_purifyingflames_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_purifyingflames_12.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_CastExecuteIsPurifyingFlamesIsCastOnEnemyChance_25%"
+				m_Requirements = 
+				[
+					"CastExecute",
+					"Isoracle",
+					"IsPurifyingFlames",
+					"IsCastOnEnemy",
+					"Chance_25%",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_CastExecuteIsFalsePromiseChance_50%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_falsepromise_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_falsepromise_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_falsepromise_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_falsepromise_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_falsepromise_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_falsepromise_11.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_CastExecuteIsFalsePromiseChance_50%"
+				m_Requirements = 
+				[
+					"CastExecute",
+					"Isoracle",
+					"IsFalsePromise",
+					"Chance_50%",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_LevelUp"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_levelup_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_levelup_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_levelup_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_levelup_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_levelup_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_levelup_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_levelup_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_levelup_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_levelup_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_levelup_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_levelup_11.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_LevelUp"
+				m_Requirements = 
+				[
+					"LevelUp",
+					"Isoracle",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_LastHit"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_lasthit_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_lasthit_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_lasthit_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_lasthit_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_lasthit_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_lasthit_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_lasthit_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_lasthit_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_lasthit_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_lasthit_11.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_lasthit_12.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_lasthit_13.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_LastHit"
+				m_Requirements = 
+				[
+					"LastHit",
+					"Isoracle",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_Death"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_death_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_death_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_death_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_death_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_death_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_death_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_death_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_death_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_death_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_death_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_death_12.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_death_13.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_death_14.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_death_15.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_Death"
+				m_Requirements = 
+				[
+					"Death",
+					"Isoracle",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_DeathChance_1%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_death_11.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_DeathChance_1%"
+				m_Requirements = 
+				[
+					"Death",
+					"Isoracle",
+					"Chance_1%",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_DeathIsReincarnating"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_fastres_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_DeathIsReincarnating"
+				m_Requirements = 
+				[
+					"Death",
+					"Isoracle",
+					"IsReincarnating",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_Respawn"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_respawn_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_respawn_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_respawn_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_respawn_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_respawn_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_respawn_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_respawn_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_respawn_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_respawn_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_respawn_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_respawn_11.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_Respawn"
+				m_Requirements = 
+				[
+					"Respawn",
+					"Isoracle",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_PurchaseIsExpensiveItem"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_purch_01.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_purch_02.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_PurchaseIsExpensiveItem"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Isoracle",
+					"IsExpensiveItem",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_PurchaseIsUltimateScepter"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_scepter_01.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_scepter_02.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_PurchaseIsUltimateScepter"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Isoracle",
+					"IsUltimateScepter",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_PurchaseIsBlinkDagger"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_blink_01.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_blink_02.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_PurchaseIsBlinkDagger"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Isoracle",
+					"IsBlinkDagger",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_PurchaseIsPipe"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_items_01.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_PurchaseIsPipe"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Isoracle",
+					"IsPipe",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_PurchaseIsOrchid"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_items_02.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_PurchaseIsOrchid"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Isoracle",
+					"IsOrchid",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_PurchaseIsUrnOfShadows"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_items_03.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_PurchaseIsUrnOfShadows"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Isoracle",
+					"IsUrnOfShadows",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_PurchaseIsMekansm"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_items_04.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_PurchaseIsMekansm"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Isoracle",
+					"IsMekansm",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_PurchaseIsArmlet"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_items_05.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_PurchaseIsArmlet"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Isoracle",
+					"IsArmlet",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_PurchaseIsBlackKingBar"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_items_06.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_PurchaseIsBlackKingBar"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Isoracle",
+					"IsBlackKingBar",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_PurchaseIsForceStaff"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_items_07.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_PurchaseIsForceStaff"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Isoracle",
+					"IsForceStaff",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_PurchaseIsGhostScepter"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_items_08.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_PurchaseIsGhostScepter"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Isoracle",
+					"IsGhostScepter",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_PurchaseIsSphere"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_items_09.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_PurchaseIsSphere"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Isoracle",
+					"IsSphere",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_PurchaseIsMedallion"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_items_10.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_PurchaseIsMedallion"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Isoracle",
+					"IsMedallion",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_PurchaseIsNecronomicon"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_items_11.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_PurchaseIsNecronomicon"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Isoracle",
+					"IsNecronomicon",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_PurchaseIsDagon"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_items_12.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_PurchaseIsDagon"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Isoracle",
+					"IsDagon",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_PurchaseIsBloodStone"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_items_13.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_PurchaseIsBloodStone"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Isoracle",
+					"IsBloodStone",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_PurchaseIsSkadi"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_items_14.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_PurchaseIsSkadi"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Isoracle",
+					"IsSkadi",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_PurchaseIsShiva"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_items_15.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_PurchaseIsShiva"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Isoracle",
+					"IsShiva",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_PurchaseIsArcaneBoots"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_items_16.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_PurchaseIsArcaneBoots"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Isoracle",
+					"IsArcaneBoots",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_PurchaseIsHeart"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_items_17.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_PurchaseIsHeart"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Isoracle",
+					"IsHeart",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_PurchaseIsDivineRapier"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_items_18.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_PurchaseIsDivineRapier"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Isoracle",
+					"IsDivineRapier",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_PurchaseIsDesolator"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_items_19.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_PurchaseIsDesolator"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Isoracle",
+					"IsDesolator",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_PurchaseIsEulScepter"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_items_20.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_PurchaseIsEulScepter"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Isoracle",
+					"IsEulScepter",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_PurchaseIsSheepStick"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_items_21.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_PurchaseIsSheepStick"
+				m_Requirements = 
+				[
+					"Purchase",
+					"Isoracle",
+					"IsSheepStick",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_Bottling"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_bottle_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_bottle_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_bottle_03.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_Bottling"
+				m_Requirements = 
+				[
+					"Bottling",
+					"Isoracle",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_Deny"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_deny_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_deny_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_deny_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_deny_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_deny_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_deny_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_deny_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_deny_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_deny_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_deny_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_deny_11.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_deny_12.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_deny_13.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_deny_14.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_deny_15.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_deny_16.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_deny_17.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_deny_18.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_deny_19.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_deny_20.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_Deny"
+				m_Requirements = 
+				[
+					"Deny",
+					"Isoracle",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_MissingIsLaneTop"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_lanemissing_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_MissingIsLaneTop"
+				m_Requirements = 
+				[
+					"Missing",
+					"Isoracle",
+					"IsLaneTop",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_MissingIsLaneMid"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_lanemissing_02.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_MissingIsLaneMid"
+				m_Requirements = 
+				[
+					"Missing",
+					"Isoracle",
+					"IsLaneMid",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_MissingIsLaneBot"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_lanemissing_03.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_MissingIsLaneBot"
+				m_Requirements = 
+				[
+					"Missing",
+					"Isoracle",
+					"IsLaneBot",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_ItemDropIsCommonDrop"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_itemcommon_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_ItemDropIsCommonDrop"
+				m_Requirements = 
+				[
+					"ItemDrop",
+					"Isoracle",
+					"IsCommonDrop",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_ItemDropIsRareDrop"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_itemmoderate_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_ItemDropIsRareDrop"
+				m_Requirements = 
+				[
+					"ItemDrop",
+					"Isoracle",
+					"IsRareDrop",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_ItemDropIsUltraRareDrop"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_itemare_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_itemare_02.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_ItemDropIsUltraRareDrop"
+				m_Requirements = 
+				[
+					"ItemDrop",
+					"Isoracle",
+					"IsUltraRareDrop",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_Immortality"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_immort_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_Immortality"
+				m_Requirements = 
+				[
+					"Immortality",
+					"Isoracle",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_ImmortalityChance_25%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_immort_02.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_ImmortalityChance_25%"
+				m_Requirements = 
+				[
+					"Immortality",
+					"Isoracle",
+					"Chance_25%",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_PowerupIsPowerupHaste"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_haste_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_PowerupIsPowerupHaste"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Isoracle",
+					"IsPowerupHaste",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_PowerupIsPowerupHasteChance_25%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_haste_02.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_PowerupIsPowerupHasteChance_25%"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Isoracle",
+					"IsPowerupHaste",
+					"Chance_25%",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_PowerupIsPowerupBounty"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_lasthit_11.vcd"
+					m_params = 
+					{
+						m_respeakdelay.start = 300.000000
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_PowerupIsPowerupBounty"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Isoracle",
+					"IsPowerupBounty",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_PowerupIsPowerupArcane"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_purch_03.vcd"
+					m_params = 
+					{
+						m_respeakdelay.start = 300.000000
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_PowerupIsPowerupArcane"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Isoracle",
+					"IsPowerupArcane",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_PowerupIsPowerupDoubleDamage"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_doubdam_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_PowerupIsPowerupDoubleDamage"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Isoracle",
+					"IsPowerupDoubleDamage",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_PowerupIsPowerupDoubleDamageChance_25%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_doubdam_02.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_PowerupIsPowerupDoubleDamageChance_25%"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Isoracle",
+					"IsPowerupDoubleDamage",
+					"Chance_25%",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_PowerupIsPowerupRegeneration"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_regen_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_PowerupIsPowerupRegeneration"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Isoracle",
+					"IsPowerupRegeneration",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_PowerupIsPowerupRegenerationChance_25%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_regen_02.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_PowerupIsPowerupRegenerationChance_25%"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Isoracle",
+					"IsPowerupRegeneration",
+					"Chance_25%",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_PowerupIsPowerupIllusion"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_illus_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_PowerupIsPowerupIllusion"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Isoracle",
+					"IsPowerupIllusion",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_PowerupIsPowerupIllusionChance_25%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_illus_02.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_PowerupIsPowerupIllusionChance_25%"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Isoracle",
+					"IsPowerupIllusion",
+					"Chance_25%",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_PowerupIsPowerupInvisibility"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_invis_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_PowerupIsPowerupInvisibility"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Isoracle",
+					"IsPowerupInvisibility",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_PowerupIsPowerupInvisibilityChance_25%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_invis_02.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_PowerupIsPowerupInvisibilityChance_25%"
+				m_Requirements = 
+				[
+					"Powerup",
+					"Isoracle",
+					"IsPowerupInvisibility",
+					"Chance_25%",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_CooldownLittleNag"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_notyet_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_notyet_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_notyet_07.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_CooldownLittleNag"
+				m_Requirements = 
+				[
+					"Cooldown",
+					"Isoracle",
+					"LittleNag",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_CooldownSuperNag"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_notyet_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_notyet_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_notyet_09.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_CooldownSuperNag"
+				m_Requirements = 
+				[
+					"Cooldown",
+					"Isoracle",
+					"SuperNag",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_CooldownMediumNag"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_notyet_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_notyet_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_notyet_08.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_CooldownMediumNag"
+				m_Requirements = 
+				[
+					"Cooldown",
+					"Isoracle",
+					"MediumNag",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_NoManaLittleNag"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_nomana_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_nomana_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_nomana_07.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_NoManaLittleNag"
+				m_Requirements = 
+				[
+					"NoMana",
+					"Isoracle",
+					"LittleNag",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_NoManaMediumNag"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_nomana_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_nomana_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_nomana_08.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_NoManaMediumNag"
+				m_Requirements = 
+				[
+					"NoMana",
+					"Isoracle",
+					"MediumNag",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_NoManaSuperNag"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_nomana_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_nomana_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_nomana_09.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_NoManaSuperNag"
+				m_Requirements = 
+				[
+					"NoMana",
+					"Isoracle",
+					"SuperNag",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_Thanks"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_thanks_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_thanks_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_thanks_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_thanks_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_thanks_05.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_Thanks"
+				m_Requirements = 
+				[
+					"Thanks",
+					"Isoracle",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_Select"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_115.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_Select"
+				m_Requirements = 
+				[
+					"Select",
+					"Isoracle",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_PainChance_25%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_underattack_01.vcd"
+					m_params = 
+					{
+						m_respeakdelay.start = 120.000000
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_PainChance_25%"
+				m_Requirements = 
+				[
+					"Pain",
+					"Isoracle",
+					"Chance_25%",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_Pain"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_pain_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_pain_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_pain_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_pain_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_pain_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_pain_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_pain_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_pain_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_pain_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_pain_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_pain_11.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_pain_12.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_Pain"
+				m_Requirements = 
+				[
+					"Pain",
+					"Isoracle",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_InTheBag"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_inthebag_01.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_InTheBag"
+				m_Requirements = 
+				[
+					"InTheBag",
+					"Isoracle",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_Defeat"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_lose_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_lose_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_lose_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_lose_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_lose_05.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_Defeat"
+				m_Requirements = 
+				[
+					"Defeat",
+					"Isoracle",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_Victory"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_win_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_win_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_win_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_win_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_win_05.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_Victory"
+				m_Requirements = 
+				[
+					"Victory",
+					"Isoracle",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_EmoteIsEmoteLaugh"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_laugh_01.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_laugh_02.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_laugh_03.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_laugh_04.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_laugh_05.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_laugh_06.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_laugh_07.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_laugh_08.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_laugh_09.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_laugh_10.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_laugh_11.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_laugh_12.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_laugh_13.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_laugh_14.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_laugh_15.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_laugh_16.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_laugh_17.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_laugh_18.vcd"
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_laugh_19.vcd"
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_EmoteIsEmoteLaugh"
+				m_Requirements = 
+				[
+					"Emote",
+					"Isoracle",
+					"IsEmoteLaugh",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyAbaddon"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_001.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyAbaddon"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyAbaddon",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyAbyssal_Underlord"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_002.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyAbyssal_Underlord"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyAbyssal_Underlord",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyAlchemist"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_003.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyAlchemist"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyAlchemist",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyAncient_Apparition"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_004.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyAncient_Apparition"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyAncient_Apparition",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyAntiMage"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_005.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyAntiMage"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyAntiMage",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyArc_Warden"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_006.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyArc_Warden"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyArc_Warden",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyAxe"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_007.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyAxe"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyAxe",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyBane"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_008.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyBane"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyBane",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyBatrider"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_009.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyBatrider"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyBatrider",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyBeastmaster"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_010.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyBeastmaster"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyBeastmaster",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyBloodseeker"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_011.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_012.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyBloodseeker"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyBloodseeker",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyBounty_Hunter"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_013.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyBounty_Hunter"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyBounty_Hunter",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyBrewmaster"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_014.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyBrewmaster"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyBrewmaster",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyBristleback"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_015.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyBristleback"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyBristleback",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyBroodmother"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_016.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyBroodmother"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyBroodmother",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyChaos_Knight"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_017.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyChaos_Knight"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyChaos_Knight",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyChen"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_018.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyChen"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyChen",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyClinkz"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_019.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyClinkz"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyClinkz",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyRattletrap"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_020.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyRattletrap"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyRattletrap",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyCrystalMaiden"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_021.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyCrystalMaiden"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyCrystalMaiden",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyDark_Seer"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_022.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyDark_Seer"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyDark_Seer",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyDazzle"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_024.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyDazzle"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyDazzle",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyDeath_Prophet"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_025.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyDeath_Prophet"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyDeath_Prophet",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyDisruptor"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_121.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyDisruptor"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyDisruptor",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyDoom_Bringer"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_026.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyDoom_Bringer"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyDoom_Bringer",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyDragon_Knight"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_027.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyDragon_Knight"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyDragon_Knight",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyDrowRanger"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_028.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyDrowRanger"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyDrowRanger",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyEarth_Spirit"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_030.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyEarth_Spirit"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyEarth_Spirit",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyEarthshaker"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_029.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyEarthshaker"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyEarthshaker",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyElder_Titan"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_031.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyElder_Titan"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyElder_Titan",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyEmber_Spirit"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_036.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyEmber_Spirit"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyEmber_Spirit",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyEnchantress"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_033.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyEnchantress"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyEnchantress",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyEnigma"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_034.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyEnigma"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyEnigma",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyFaceless_Void"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_035.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyFaceless_Void"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyFaceless_Void",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyGyrocopter"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_037.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyGyrocopter"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyGyrocopter",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyHuskar"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_038.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyHuskar"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyHuskar",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyInvoker"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_039.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_040.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyInvoker"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyInvoker",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyWisp"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_110.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyWisp"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyWisp",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyJakiro"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_041.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyJakiro"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyJakiro",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyJuggernaut"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_042.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyJuggernaut"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyJuggernaut",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyKeeper_of_the_Light"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_043.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_044.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyKeeper_of_the_Light"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyKeeper_of_the_Light",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyKunkka"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_120.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyKunkka"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyKunkka",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyLegion_Commander"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_046.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyLegion_Commander"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyLegion_Commander",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyLeshrac"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_047.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyLeshrac"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyLeshrac",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyLich"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_048.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyLich"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyLich",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyLife_Stealer"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_049.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyLife_Stealer"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyLife_Stealer",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyLina"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_050.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyLina"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyLina",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyLion"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_051.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyLion"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyLion",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyLone_Druid"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_052.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyLone_Druid"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyLone_Druid",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyLuna"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_053.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyLuna"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyLuna",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyLycan"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_054.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyLycan"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyLycan",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyMagnataur"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_055.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyMagnataur"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyMagnataur",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyMedusa"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_056.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyMedusa"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyMedusa",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyMeepo"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_057.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyMeepo"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyMeepo",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyMirana"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_058.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyMirana"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyMirana",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyMorphling"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_059.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyMorphling"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyMorphling",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyNaga_Siren"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_060.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyNaga_Siren"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyNaga_Siren",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyFurion"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_061.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyFurion"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyFurion",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyNecrolyte"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_062.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyNecrolyte"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyNecrolyte",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyNight_Stalker"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_063.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyNight_Stalker"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyNight_Stalker",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyNyx_Assassin"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_064.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyNyx_Assassin"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyNyx_Assassin",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyOgre_Magi"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_065.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyOgre_Magi"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyOgre_Magi",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyOmniknight"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_066.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyOmniknight"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyOmniknight",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyOutworld_Destroyer"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_067.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyOutworld_Destroyer"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyOutworld_Destroyer",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyPhantom_Assassin"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_068.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyPhantom_Assassin"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyPhantom_Assassin",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyPhantom_Lancer"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_069.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyPhantom_Lancer"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyPhantom_Lancer",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyPhoenix"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_070.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyPhoenix"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyPhoenix",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyPuck"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_071.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyPuck"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyPuck",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyPudge"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_072.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyPudge"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyPudge",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyPugna"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_073.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyPugna"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyPugna",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyQueenofPain"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_074.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyQueenofPain"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyQueenofPain",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyRazor"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_075.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyRazor"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyRazor",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyRiki"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_076.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyRiki"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyRiki",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyRubick"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_077.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyRubick"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyRubick",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemySandKing"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_078.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemySandKing"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemySandKing",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyShadow_Demon"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_079.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyShadow_Demon"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyShadow_Demon",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyNevermore"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_080.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyNevermore"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyNevermore",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyShadowShaman"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_081.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyShadowShaman"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyShadowShaman",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemySilencer"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_082.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemySilencer"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemySilencer",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemySkywrath_Mage"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_083.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemySkywrath_Mage"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemySkywrath_Mage",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemySlardar"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_084.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemySlardar"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemySlardar",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemySlark"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_085.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemySlark"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemySlark",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemySniper"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_086.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemySniper"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemySniper",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemySpectre"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_087.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemySpectre"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemySpectre",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemySpirit_Breaker"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_088.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemySpirit_Breaker"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemySpirit_Breaker",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyStormSpirit"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_089.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyStormSpirit"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyStormSpirit",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemySven"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_090.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemySven"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemySven",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyTechies"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_091.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyTechies"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyTechies",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_5%IsEnemyTechies"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_randomprophecies_03.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_5%IsEnemyTechies"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_5%",
+					"IsEnemyTechies",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyTemplar_Assassin"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_092.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyTemplar_Assassin"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyTemplar_Assassin",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyTerrorblade"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_093.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyTerrorblade"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyTerrorblade",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyTidehunter"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_094.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyTidehunter"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyTidehunter",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyShredder"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_095.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyShredder"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyShredder",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyTinker"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_096.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyTinker"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyTinker",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyTiny"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_097.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyTiny"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyTiny",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyTreant"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_119.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyTreant"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyTreant",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyTusk"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_099.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyTusk"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyTusk",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyUndying"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_100.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyUndying"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyUndying",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyUrsa"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_101.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyUrsa"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyUrsa",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyVengefulSpirit"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_102.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyVengefulSpirit"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyVengefulSpirit",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyVenomancer"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_103.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyVenomancer"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyVenomancer",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyViper"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_104.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyViper"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyViper",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyVisage"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_105.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyVisage"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyVisage",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyWarlock"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_106.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyWarlock"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyWarlock",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyWeaver"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_107.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyWeaver"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyWeaver",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyWindrunner"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_108.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyWindrunner"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyWindrunner",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyWinter_Wyvern"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_109.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyWinter_Wyvern"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyWinter_Wyvern",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyWitchDoctor"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_111.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyWitchDoctor"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyWitchDoctor",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemySkeleton_King"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_112.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemySkeleton_King"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemySkeleton_King",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyZuus"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_prophecies_113.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_75%IsEnemyZuus"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_75%",
+					"IsEnemyZuus",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_15%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_randomprophecies_01.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_randomprophecies_02.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_randomprophecies_04.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_randomprophecies_05.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_randomprophecies_06.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_randomprophecies_07.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_randomprophecies_08.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_15%"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_15%",
+				]
+			}
+		},
+		
+		{
+			m_name = "oracle_AllyNearIsProphecyTimeChance_1%"
+			m_responses = 
+			[
+				
+				{
+					m_type = "SCENE"
+					m_value = "scenes/oracle/oracle_orac_randomprophecies_10.vcd"
+					m_params = 
+					{
+						m_bSpeakOnce = true
+					}
+				},
+			]
+			m_pEmbeddedRule = 
+			{
+				m_name = "oracle_AllyNearIsProphecyTimeChance_1%"
+				m_Requirements = 
+				[
+					"AllyNear",
+					"Isoracle",
+					"IsProphecyTime",
+					"Chance_1%",
+				]
+			}
+		},
+	]
+	m_Requirements = 
+	[
+		
+		{
+			m_name = "Isoracle"
+			m_matchKey = "classname"
+			m_matchExpr = "npc_dota_hero_oracle"
+			m_flWeight = 5.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFortunesEnd"
+			m_matchKey = "abilityname"
+			m_matchExpr = "oracle_fortunes_end"
+			m_flWeight = 5.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFatesEdict"
+			m_matchKey = "abilityname"
+			m_matchExpr = "oracle_fates_edict"
+			m_flWeight = 5.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsPurifyingFlames"
+			m_matchKey = "abilityname"
+			m_matchExpr = "oracle_purifying_flames"
+			m_flWeight = 5.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFalsePromise"
+			m_matchKey = "abilityname"
+			m_matchExpr = "oracle_false_promise"
+			m_flWeight = 5.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsProphecyTime"
+			m_matchKey = "gametime"
+			m_matchExpr = ">30,<180"
+			m_flWeight = 5.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCastOnAlly"
+			m_matchKey = "isally"
+			m_matchExpr = "1"
+			m_flWeight = 5.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsCastOnEnemy"
+			m_matchKey = "isally"
+			m_matchExpr = "0"
+			m_flWeight = 5.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFPDied"
+			m_matchKey = "targetsurvived"
+			m_matchExpr = "0"
+			m_flWeight = 5.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFPSurvived"
+			m_matchKey = "targetsurvived"
+			m_matchExpr = "1"
+			m_flWeight = 5.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsFPBarelyLived"
+			m_matchKey = "survived_hp"
+			m_matchExpr = "<100"
+			m_flWeight = 5.000000
+			m_bRequired = true
+		},
+		
+		{
+			m_name = "IsOracleLoadoutSpawn"
+			m_matchKey = "special_spawn"
+			m_matchExpr = "oracle_loadout_spawn"
+			m_flWeight = 5.000000
+			m_bRequired = true
+		},
+	]
+}

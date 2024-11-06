@@ -23,7 +23,17 @@ function parse_data(data: string) {
       const match = line.match(/^"(.*?)"\s*"(.*?)"$/);
       if (match) {
         const key = match[1];
+
+        // So values can be as an array...
+        // example:     "AbilityBehavior": "DOTA_ABILITY_BEHAVIOR_AOE | DOTA_ABILITY_BEHAVIOR_POINT"
+        // Also can be level based key&value
+        // example:     "AbilityManaCost": "95 105 115 125"
+        //
         const value = match[2];
+        const splitted = value.split(/\s+/g);
+        // if (splitted.every((v) => v !== "|") && splitted.length > 1) result[key] = splitted;
+        // else 
+        
         result[key] = value;
       }
       i++;

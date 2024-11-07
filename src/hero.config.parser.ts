@@ -2,6 +2,7 @@ const new_line_regex = /\r?\n/;
 
 function parse_data(data: string) {
   const result: Record<string, any> = {};
+  const enums: Record<string, string[]> = {};
   let current_key: string | null = null;
   let depth = 0;
 
@@ -31,9 +32,13 @@ function parse_data(data: string) {
         //
         const value = match[2];
         const splitted = value.split(/\s+/g);
-        // if (splitted.every((v) => v !== "|") && splitted.length > 1) result[key] = splitted;
-        // else 
-        
+        if (splitted.some((v) => v === "|") && splitted.length > 1) {
+          // result[key] = splitted;
+          if (!enums[key]) enums[key] = [];
+          enums[key].push(...splitted.filter((v) => v !== "|"));
+        }
+        // else
+
         result[key] = value;
       }
       i++;
@@ -45,13 +50,23 @@ function parse_data(data: string) {
       depth++;
       if (depth > 1) {
         const sub_block = extract_nested_scope(lines, i + 1);
-        result[current_key!] = parse_data(sub_block);
+        const { result: _result, enums: _enums } = parse_data(sub_block);
+
+        for (const key in _enums) {
+          if (!enums[key]) enums[key] = [];
+          enums[key].push(..._enums[key]);
+        }
+        result[current_key!] = _result;
         i += sub_block.split(new_line_regex).length;
         continue;
       }
     } else if (line === "}") {
       depth--;
-      if (depth === 0) return result;
+      if (depth === 0)
+        return {
+          result,
+          enums,
+        };
     }
 
     // If current line is "key" then set current key value
@@ -63,7 +78,7 @@ function parse_data(data: string) {
     i++;
   }
 
-  return result;
+  return { result, enums };
 }
 
 // function to extract nested scope

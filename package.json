@@ -7,5 +7,8 @@
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "quicktype-core": "^23.0.170"
   }
 }
